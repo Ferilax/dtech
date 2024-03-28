@@ -44,6 +44,11 @@
 			margin-top: 14px;
 			animation: 0.9s ease-in-out arrow infinite alternate;
 		}
+
+		@include md-d {
+			pointer-events: none;
+			cursor: default;
+		}
 	}
 
 	&__send {

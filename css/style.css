@@ -383,6 +383,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 14px;
   animation: 0.9s ease-in-out arrow infinite alternate;
 }
+@media (max-width: 1023.8px) {
+  .cover__info {
+    pointer-events: none;
+    cursor: default;
+  }
+}
 .cover__send {
   width: 150px;
   height: 36px;
@@ -1203,6 +1209,7 @@ html {
 }
 
 body {
+  scroll-behavior: smooth;
   position: relative;
   font-family: Manrope;
   font-size: 14px;
