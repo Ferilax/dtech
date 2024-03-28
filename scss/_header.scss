@@ -1,0 +1,318 @@
+@import "_breakpoints.scss";
+
+@keyframes header {
+	0% {
+		transform: translate(0, -100%);
+	}
+
+	100% {
+		transform: translate(0, 0%);
+	}
+}
+
+.header {
+	color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	width: 100%;
+	transition: 0.2s;
+
+	&__logo {
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+
+		@include lg-d {
+			flex: 0 0 93px;
+			height: 22px;
+		}
+	}
+
+	&__close {
+		width: 30px;
+		aspect-ratio: 1/1;
+		background: transparent;
+		position: absolute;
+		z-index: 101;
+		right: 20px;
+		top: 23px;
+
+		align-items: center;
+		justify-content: center;
+
+		display: none;
+	}
+
+	&__content {
+		height: 66px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 20px;
+		position: relative;
+	}
+
+	&__menu-login {
+		background: transparent;
+		width: 100%;
+		height: 44px;
+		flex: 0 0 44px;
+		color: var(--blue);
+		border: 1px solid var(--blue);
+		border-radius: 50px;
+		margin-top: 30px;
+
+		justify-content: center;
+		align-items: center;
+
+		display: none;
+	}
+
+	&__nav-container {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		height: 100%;
+	}
+
+	&__login {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+
+		flex: 0 0 110px;
+		height: 36px;
+
+		border: 1px solid #FFFFFF;
+		background: transparent;
+		border-radius: 50px;
+	}
+
+	&__link {
+		position: relative;
+	}
+
+	&__link.active {
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 1px;
+			background: #FFFFFF;
+			bottom: -5px;
+			left: 0;
+		}
+	}
+
+	@include md-d {
+		top: 20px;
+
+		&__content {
+			justify-content: flex-start;
+			gap: 10px;
+			height: 36px;
+		}
+
+		&__nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+
+			padding: 76px 20px 20px;
+
+			transition: transform 0.3s;
+			background: #FFFFFF;
+			color: var(--black);
+			font-weight: 800;
+			font-size: 20px;
+			transform: translate(-100%, 0);
+
+			overflow-y: auto;
+		}
+
+		&__menu-login {
+			display: flex;
+			font-weight: 400;
+
+			span {
+				color: var(--blue);
+			}
+		}
+
+		&__nav-container {
+			overflow-y: auto;
+			align-items: flex-start;
+			flex-direction: column;
+			gap: 0;
+
+			&::before {
+				content: "";
+				flex: 1 1 auto;
+			}
+		}
+
+		&__link {
+			padding: 10px 0;
+			width: 100%;
+
+			&:not(:last-child) {
+				border-bottom: 1px solid var(--black)25;
+			}
+		}
+
+		&__close {
+			display: flex;
+		}
+
+		&__login {
+			position: absolute;
+			right: 0;
+			width: 110px;
+		}
+	}
+
+	@media (max-width: 300px) {
+		&__logo {
+			flex: 0 0 83px;
+		}
+
+		&__login {
+			width: 90px;
+		}
+	}
+}
+
+.header.fixed {
+	@include lg-u {
+		position: fixed;
+		background: #FFFFFF;
+		color: var(--black);
+		animation: header 0.2s linear forwards;
+
+		.header__login {
+			color: var(--blue);
+			border: 1px solid var(--blue);
+		}
+
+		.header__loginIcon {
+			fill: var(--blue);
+		}
+
+		.header__logoIcon {
+			fill: var(--blue);
+		}
+
+		.header__link.active {
+			&::before {
+				background: var(--black);
+			}
+		}
+	}
+}
+
+.burger {
+	padding: 7.5px 2.5px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+
+	//position: absolute;
+
+	&__body {
+		width: 25px;
+		height: 15px;
+		position: relative;
+		transition: 0.2s;
+
+		&::before,
+		&::after {
+			transition: inherit;
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 25px;
+			height: 1px;
+			background: #FFFFFF;
+		}
+
+		&::before {
+			top: 0px;
+		}
+
+		&::after {
+			top: 13px;
+			width: 15px;
+		}
+
+	}
+
+	span {
+		position: absolute;
+		top: 6px;
+		left: 0;
+		width: 25px;
+		height: 1px;
+		background: #FFFFFF;
+		transition: inherit;
+	}
+
+	@include lg-u {
+		display: none;
+	}
+}
+
+.header.menu-open {
+	position: fixed;
+
+	pointer-events: none;
+
+	.header__close,
+	.header__nav,
+	.header__logo,
+	.burger {
+		pointer-events: all;
+	}
+
+	.burger {
+		.burger__body {
+			width: 25px;
+			height: 15px;
+
+			&::before {
+				background: var(--blue);
+			}
+
+			&::after {
+				background: var(--blue);
+			}
+		}
+
+		span {
+			background: var(--blue);
+		}
+	}
+
+	.header__nav {
+		transform: translate(0, 0);
+	}
+
+	.header__logoIcon {
+		fill: var(--blue);
+	}
+
+	.header__login {
+		z-index: -9999;
+	}
+
+	.header__link.active {
+		color: var(--blue);
+	}
+}

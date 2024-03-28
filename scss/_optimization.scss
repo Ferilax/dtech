@@ -1,0 +1,116 @@
+.optimization {
+	padding: 150px 0;
+
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		gap: 60px;
+	}
+
+	&__left {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1 1 auto; //406px
+		min-width: 0;
+		gap: 20px;
+	}
+
+	&__right {
+		flex: 0 0 643px;
+	}
+
+	&__text {
+		line-height: 1.4;
+		margin-top: 20px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	@media (max-width: 900px) {
+		&__body {
+			flex-direction: column;
+			gap: 20px;
+		}
+	}
+
+	@include lg-d {
+		padding: 135px 0;
+	}
+
+	@include md-d {
+		padding: 110px 0;
+	}
+
+	@include sm-d {
+		padding: 100px 0 11%;
+	}
+}
+
+.devices {
+	img {
+		object-fit: cover;
+		height: 100%;
+		width: 100%;
+	}
+
+	&__macbook {
+		position: relative;
+		aspect-ratio: 643/393;
+	}
+
+	&__macbook-image {
+		position: absolute;
+		z-index: -1;
+		width: 81.9%;
+		height: 86.7%;
+		left: 9%;
+		top: 2.2%;
+	}
+
+	&__iphone {
+		position: absolute;
+		z-index: 3;
+		bottom: -18%;
+		right: 11%;
+		width: 172px;
+		width: 26%;
+		aspect-ratio: 172/350;
+		//height: 350px;
+
+		transform: rotate(35deg);
+	}
+
+	&__iphone-image {
+		position: absolute;
+		top: 1.8%;
+		left: 4.5%;
+		width: 90.7%;
+		height: 96.1%;
+		z-index: -1;
+
+		border-radius: 6%;
+		overflow: hidden;
+	}
+
+	&__swiper {
+		height: 100%;
+	}
+
+	@include lg-d {
+		flex: 0 0 543px;
+	}
+
+	@include md-d {
+		flex: 0 0 443px;
+	}
+
+	@media (max-width: 900px) {
+		flex: 1 1 auto;
+		margin: 0 -20px;
+		overflow-x: clip;
+		overflow-y: visible;
+	}
+}

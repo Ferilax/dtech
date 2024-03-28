@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__content">
+					<div class="burger">
+						<div class="burger__body">
+							<span></span>
+						</div>
+					</div>
+					<a href="#" class="header__logo">
+						<svg width="109" height="26" viewBox="0 0 109 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_922_3556)">
+								<path d="M4.64904 25.838L9.25789 -0.0214233H-0.00415039L4.61062 25.838H4.64904Z" fill="white"
+									class="header__logoIcon" />
+								<path
+									d="M26.0708 6.8088C23.9576 2.74345 19.8045 -0.0213623 15.0272 -0.0213623H11.3327L10.1157 6.8088H14.2723C17.4182 6.95602 19.9251 9.63775 19.9251 12.9255C19.9251 16.2132 17.4241 18.8894 14.283 19.0421H7.93802L6.72034 25.8729H15.0272C19.8051 25.8729 23.9582 23.1087 26.0708 19.0421C27.0177 17.2211 27.5551 15.1374 27.5551 12.9261C27.5551 10.7147 27.0177 8.62981 26.0708 6.8088Z"
+									fill="white" class="header__logoIcon" />
+								<path
+									d="M42.4385 4.29443H34.0861V21.5339L42.4385 21.5565C45.6239 21.5565 48.3927 19.7135 49.8007 17.003C50.432 15.7886 50.7902 14.4001 50.7902 12.9255C50.7902 11.4508 50.432 10.0611 49.8007 8.84727C48.3915 6.13683 45.6227 4.29382 42.4385 4.29382V4.29443ZM41.9419 17.003H38.9125V8.84727H41.9348C44.0321 8.94562 45.7031 10.7336 45.7031 12.9248C45.7031 15.116 44.0356 16.901 41.9419 17.0024V17.003Z"
+									fill="white" class="header__logoIcon" />
+								<path d="M51.6095 8.82466H55.5173V21.5571H60.5967V8.82466H64.5045V4.29443H51.6095V8.82466Z" fill="white"
+									class="header__logoIcon" />
+								<path
+									d="M104.178 4.29443V10.4319H99.3514V4.29443H94.5256V21.5571H99.3514V15.4196H104.178V21.5571H109.004V4.29443H104.178Z"
+									fill="white" class="header__logoIcon" />
+								<path
+									d="M68.4708 4.29443H66.2098V10.6603V15.1906V21.5571H68.4708H71.2886H79.1054V17.0268H71.2886V15.1906H72.6576H75.8815V10.6603H72.6576H71.2886V8.82405H79.1054V4.29443H71.2886H68.4708Z"
+									fill="white" class="header__logoIcon" />
+								<path
+									d="M80.9136 8.84788C80.2823 10.0623 79.9241 11.4508 79.9241 12.9255C79.9241 14.4001 80.2823 15.7898 80.9136 17.0036C82.3228 19.7141 85.0915 21.5571 88.2758 21.5571H92.8196V17.0036H88.7794C86.6822 16.9053 85.0111 15.1173 85.0111 12.9261C85.0111 10.7349 86.6786 8.94989 88.7723 8.84849H92.8196V4.29504H88.2758C85.0903 4.29504 82.3216 6.13805 80.9136 8.84849V8.84788Z"
+									fill="white" class="header__logoIcon" />
+							</g>
+							<defs>
+								<clipPath id="clip0_922_3556">
+									<rect width="109" height="26" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+					<nav class="header__nav">
+						<div class="header__nav-container">
+							<a href="#" class="header__link">О проекте</a>
+							<a href="#" class="header__link">Для кого</a>
+							<a href="#" class="header__link active">Внедрение</a>
+							<a href="#" class="header__link">Тарифы</a>
+							<a href="#" class="header__link">О нас</a>
+							<a href="#" class="header__link">Документы</a>
+							<a href="#" class="header__link">FAQ</a>
+							<a href="#" class="header__link">Контакты</a>
+							<a href="#" class="header__link">Инструкция</a>
+							<a href="#" class="header__menu-login">
+								<span>Войти</span>
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M9.99198 17.0833V15.8333H15.5769C15.641 15.8333 15.6998 15.8066 15.7532 15.7532C15.8066 15.6998 15.8333 15.641 15.8333 15.5769V4.4231C15.8333 4.35899 15.8066 4.30022 15.7532 4.24679C15.6998 4.19338 15.641 4.16667 15.5769 4.16667H9.99198V2.91669H15.5769C15.9978 2.91669 16.3541 3.06252 16.6458 3.35419C16.9375 3.64585 17.0833 4.00216 17.0833 4.4231V15.5769C17.0833 15.9978 16.9375 16.3541 16.6458 16.6458C16.3541 16.9375 15.9978 17.0833 15.5769 17.0833H9.99198ZM8.86221 13.5576L7.99685 12.6538L10.0257 10.625H2.91669V9.37502H10.0257L7.99685 7.34617L8.86221 6.44235L12.4199 10L8.86221 13.5576Z"
+										fill="#0167B0" />
+								</svg>
+							</a>
+						</div>
+						<button class="header__close">
+							<img src="img/blue-close.svg" alt="">
+						</button>
+
+					</nav>
+					<a href="#" class="header__login">
+						<span>Войти</span>
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="header__loginIcon"
+								d="M9.99198 17.0833V15.8333H15.5769C15.641 15.8333 15.6998 15.8066 15.7532 15.7532C15.8066 15.6998 15.8333 15.641 15.8333 15.5769V4.4231C15.8333 4.35899 15.8066 4.30022 15.7532 4.24679C15.6998 4.19338 15.641 4.16667 15.5769 4.16667H9.99198V2.91669H15.5769C15.9978 2.91669 16.3541 3.06252 16.6458 3.35419C16.9375 3.64585 17.0833 4.00216 17.0833 4.4231V15.5769C17.0833 15.9978 16.9375 16.3541 16.6458 16.6458C16.3541 16.9375 15.9978 17.0833 15.5769 17.0833H9.99198ZM8.86221 13.5576L7.99685 12.6538L10.0257 10.625H2.91669V9.37502H10.0257L7.99685 7.34617L8.86221 6.44235L12.4199 10L8.86221 13.5576Z"
+								fill="white" />
+						</svg>
+					</a>
+				</div>
+			</div>
+		</header>
+		<main>
+
+			<section class="cover">
+				<div class="container">
+					<div class="cover__content">
+						<h1 class="cover__title">PRO PARK</h1>
+						<p class="cover__text">
+							Простое решение по оптимизации сложного процесса эффективного использования электроинструмента и расходных
+							материалов в ходе строительных работ и производственных задач
+						</p>
+						<button id="send-application-trigger" class="cover__send">Оставить заявку</button>
+					</div>
+					<a href="#optimization" class="cover__info">
+						<span>Узнайте о проекте</span>
+						<img src="img/white_arrow_down.svg" alt="">
+					</a>
+				</div>
+			</section>
+
+			<section class="optimization" id="optimization">
+				<div class="container">
+					<div class="optimization__body">
+						<div class="optimization__left">
+							<swiper-container class="optimization__text-slide" navigation="true"
+								navigation-next-el=".optimization__arrow_right" navigation-prev-el=".optimization__arrow_left"
+								allow-touch-move="false">
+								<swiper-slide>
+									<h2 class="optimization__title">Оптимизируйте поиск оборудования</h2>
+									<div class="optimization__text">
+										<p>
+											Эффективный и оптимальный подбор электроинструментов и расходных материалов
+										</p>
+										<p>
+											Поиск профессионального оборудования в условиях санкций иностранных поставщиков
+										</p>
+									</div>
+								</swiper-slide>
+								<swiper-slide>
+									<h2 class="optimization__title">Ведите эффективный учет</h2>
+									<div class="optimization__text">
+										<p>
+											Отслеживание истории ремонта оборудования с помощью технологии RFID, что не только облегчает
+											задачу по оптимизации парка, но и ускоряет учетные процедуры в несколько десятков раз
+										</p>
+										<p>
+											Эффективная реализация процессов приобретения, ремонта, контроля и оптимизации парка
+											электроинструмента. Именно для этого существует решение PRO PARK
+										</p>
+									</div>
+								</swiper-slide>
+								<swiper-slide>
+									<h2 class="optimization__title">Ускорьте заказ и доставку</h2>
+									<div class="optimization__text">
+										<p>
+											Отсутствие необходимости обращаться к инженерам и специалистам снабжения, что зачастую увеличивает
+											в разы срок заказа и доставки необходимого инструмента, который может понадобится на объекте в
+											режиме «срочно сейчас»
+										</p>
+									</div>
+								</swiper-slide>
+							</swiper-container>
+							<div class="optimization__arrows arrows">
+								<button class="optimization__arrow optimization__arrow_left arrows__arrow_left">
+									<img src="img/black_left_arrow.svg" alt="" />
+								</button>
+								<button class="optimization__arrow optimization__arrow_right arrows__arrow_right">
+									<img src="img/black_left_arrow.svg" alt="" />
+								</button>
+								<div class="optimization__info arrows__info">Смотрите другие <br /> возможности PRO PARK</div>
+							</div>
+						</div>
+						<div class="optimization__right devices">
+							<div class="devices__macbook">
+								<img src="img/macbook_trans.png" alt="" />
+								<div class="devices__macbook-image">
+									<swiper-container navigation="true" navigation-next-el=".optimization__arrow_right"
+										navigation-prev-el=".optimization__arrow_left" allow-touch-move="false" class="devices__swiper">
+										<swiper-slide>
+											<img src="img/mac_img_1.png" alt="">
+										</swiper-slide>
+										<swiper-slide>
+											<img src="img/mac_img_2.png" alt="">
+										</swiper-slide>
+										<swiper-slide>
+											<img src="img/mac_img_3.png" alt="">
+										</swiper-slide>
+									</swiper-container>
+								</div>
+								<div class="devices__iphone">
+									<img src="img/iphone_transparent.png" alt="" />
+									<div class="devices__iphone-image">
+										<swiper-container navigation="true" navigation-next-el=".optimization__arrow_right"
+											navigation-prev-el=".optimization__arrow_left" allow-touch-move="false" class="devices__swiper">
+											<swiper-slide>
+												<img src="img/iphone_img_1.png" alt="">
+											</swiper-slide>
+											<swiper-slide>
+												<img src="img/iphone_img_2.png" alt="">
+											</swiper-slide>
+											<swiper-slide>
+												<img src="img/iphone_img_3.png" alt="">
+											</swiper-slide>
+										</swiper-container>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="service">
+				<div class="container">
+					<h2 class="service__title">Кому подойдет сервис?</h2>
+					<div class="service__info">PRO PARK подходят для следующих типов объектов строительства</div>
+
+					<div class="service__grid">
+						<article class="service__item">
+							<div class="service__image">
+								<img src="img/service_1.png" alt="">
+							</div>
+							<span class="service__text">Офисные здания</span>
+						</article>
+						<article class="service__item">
+							<div class="service__image">
+								<img src="img/service_2.png" alt="">
+							</div>
+							<span class="service__text">Высотные офисные здания</span>
+						</article>
+						<article class="service__item">
+							<div class="service__image">
+								<img src="img/service_3.png" alt="">
+							</div>
+							<span class="service__text">Производственные здания</span>
+						</article>
+						<article class="service__item">
+							<div class="service__image">
+								<img src="img/service_4.png" alt="">
+							</div>
+							<span class="service__text">Высотные жилые здания</span>
+						</article>
+						<article class="service__item">
+							<div class="service__image">
+								<img src="img/service_5.png" alt="">
+							</div>
+							<span class="service__text">Торговые центры</span>
+						</article>
+						<article class="service__item">
+							<div class="service__image">
+								<img src="img/service_6.png" alt="">
+							</div>
+							<span class="service__text">Другие объекты</span>
+						</article>
+					</div>
+
+					<div class="arrows">
+						<button class="arrows__arrow_left service__arrow_left">
+							<img src="img/black_left_arrow.svg" alt="" />
+						</button>
+						<button class="arrows__arrow_right service__arrow_right">
+							<img src="img/black_left_arrow.svg" alt="" />
+						</button>
+						<div class="arrows__info">В чем еще может <br> помочь PRO PARK?</div>
+					</div>
+
+					<div class="service__slider">
+						<swiper-container navigation="true" navigation-next-el=".service__arrow_right"
+							navigation-prev-el=".service__arrow_left" space-between="10px" slides-per-view="1.1"
+							allow-touch-move="false">
+							<swiper-slide>
+								<img src="img/service_1.png" alt="">
+								<div class="service__text">Офисные здания</div>
+							</swiper-slide>
+							<swiper-slide>
+								<img src="img/service_2.png" alt="">
+								<div class="service__text">Высотные офисные здания</div>
+							</swiper-slide>
+							<swiper-slide>
+								<img src="img/service_3.png" alt="">
+								<div class="service__text">Производственные здания</div>
+							</swiper-slide>
+							<swiper-slide>
+								<img src="img/service_4.png" alt="">
+								<div class="service__text">Высотные жилые здания</div>
+							</swiper-slide>
+							<swiper-slide>
+								<img src="img/service_5.png" alt="">
+								<div class="service__text">Торговые центры</div>
+							</swiper-slide>
+							<swiper-slide>
+								<img src="img/service_6.png" alt="">
+								<div class="service__text">Другие объекты</div>
+							</swiper-slide>
+						</swiper-container>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="info">
+				<div class="container">
+					<div class="info__text">
+						<p>
+							В <b>PRO PARK</b> необходимо указать тип объекта строительства, площадь необходимой постройки и количество
+							этажей. Система самостоятельно рассчитает эффективное экономическое решение по количеству и особенностям
+							использовать инструмента и расходных материалов и предложить оптимальное количество используемого
+							материала
+						</p>
+						<p>
+							<b>PRO PARK</b> также поможет организовать систему по управлению имущественным учетом на предприятии. В
+							систему
+							встроен блок сервисного обслуживания, в ходе по использования которого, можно будет отследить историю
+							использования не только инструмента, приобретенного по средствам системы <b>PRO PARK</b>, но и вести учет
+							собственного электроинструмента по средствам RFID-технологий
+						</p>
+						<p>
+							Наше решение подойдет тем, кто заинтересован в прозрачности и оптимизации парка электроинструмента в
+							разрезе как целой компании, так и отдельных мест нахождения оборудования. <b>PRO PARK</b> дает возможность
+							создания системы оптимального наполнения электроинструмента, в том числе средствами долгосрочной аренды,
+							при которой необходимость в покупке и обслуживании электроинструментов отсутствует, позволяя тем самым
+							направлять денежные ресурсы не в накопления временно используемых инструментов (кратковременная пиковая
+							нагрузка), а расширять возможности для дальнейшего развития компании
+						</p>
+					</div>
+
+					<div class="info__slider">
+						<swiper-container navigation="true" navigation-next-el=".info__arrow_right"
+							navigation-prev-el=".info__arrow_left" allow-touch-move="false">
+							<swiper-slide>
+								В <b>PRO PARK</b> необходимо указать тип объекта строительства, площадь необходимой постройки и
+								количество
+								этажей. Система самостоятельно рассчитает эффективное экономическое решение по количеству и особенностям
+								использовать инструмента и расходных материалов и предложить оптимальное количество используемого
+								материала
+							</swiper-slide>
+							<swiper-slide>
+								<b>PRO PARK</b> также поможет организовать систему по управлению имущественным учетом на предприятии. В
+								систему
+								встроен блок сервисного обслуживания, в ходе по использования которого, можно будет отследить историю
+								использования не только инструмента, приобретенного по средствам системы <b>PRO PARK</b>, но и вести
+								учет
+								собственного электроинструмента по средствам RFID-технологий
+							</swiper-slide>
+							<swiper-slide>
+								Наше решение подойдет тем, кто заинтересован в прозрачности и оптимизации парка электроинструмента в
+								разрезе как целой компании, так и отдельных мест нахождения оборудования. <b>PRO PARK</b> дает
+								возможность
+								создания системы оптимального наполнения электроинструмента, в том числе средствами долгосрочной аренды,
+								при которой необходимость в покупке и обслуживании электроинструментов отсутствует, позволяя тем самым
+								направлять денежные ресурсы не в накопления временно используемых инструментов (кратковременная пиковая
+								нагрузка), а расширять возможности для дальнейшего развития компании
+							</swiper-slide>
+						</swiper-container>
+					</div>
+
+					<div class="arrows">
+						<button class="arrows__arrow_left info__arrow_left">
+							<img src="img/white_left_arrow.svg" alt="" />
+						</button>
+						<button class="arrows__arrow_right info__arrow_right">
+							<img src="img/white_left_arrow.svg" alt="" />
+						</button>
+
+						<swiper-container navigation="true" navigation-next-el=".info__arrow_right"
+							navigation-prev-el=".info__arrow_left" allow-touch-move="false">
+							<swiper-slide>
+								В чем еще может <br> помочь PRO PARK?
+							</swiper-slide>
+							<swiper-slide>
+								Кому подойдет <br> наше решение?
+							</swiper-slide>
+							<swiper-slide></swiper-slide>
+						</swiper-container>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="tariff">
+				<div class="container">
+					<div class="tariff__body">
+						<h2>Внедрение и тарифы</h2>
+						<div class="tariff__info">
+							Внедрение системы PRO PARK включает в себя: настройку личного кабинета с указанием всех ваших текущих
+							объектов строительства и прав пользователей, маркировку всех используемых в PRO PARK активов, полную
+							подготовку остальных процессов, включая тренинг сотрудников вашей компании для того, чтобы вы смогли
+							полноценно использовать весь функционал с первого дня использования
+						</div>
+						<div class="tariff__flex">
+							<article class="tariff__item">
+								<div class="tariff__name">Участок</div>
+								<div class="tariff__service">До 50 единиц инструмента</div>
+								<button class="tariff__button">Узнать стоимость</button>
+								<div class="tariff__image">
+									<img src="img/tariff_1.png" />
+								</div>
+							</article>
+							<article class="tariff__item">
+								<div class="tariff__name">Объект</div>
+								<div class="tariff__service">От 51 до 300 единиц инструмента</div>
+								<button class="tariff__button">Узнать стоимость</button>
+								<div class="tariff__image">
+									<img src="img/tariff_2.png" />
+								</div>
+							</article>
+							<article class="tariff__item">
+								<div class="tariff__name">Корпорация</div>
+								<div class="tariff__service">Более 300 единиц инструмента</div>
+								<button class="tariff__button">Узнать стоимость</button>
+								<div class="tariff__image">
+									<img src="img/tariff_3.png" />
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="team">
+				<div class="container">
+					<div class="team__row">
+						<div class="team__left">
+							<h2>Немного о нашей команде</h2>
+							<div class="team__text">
+								<p>
+									Мы являемся инновационной командой по эффективному использованию электроинструмента и расходных
+									материалов. Мы используем только проверенные данные десятков лет опыта по различным направлениям
+								</p>
+								<p>
+									Реализацией нашего проекта занимается опытная компания программистов на аутсорсе с глубоким понимаем
+									особенностей процесса, под наблюдением и адаптацией специалистов высочайшего уровня в различных
+									областях
+									строительства и производственных задач
+								</p>
+							</div>
+						</div>
+						<div class="team__right">
+							<div class="team__image">
+								<img src="img/team_img.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="system">
+				<div class="system__body">
+					<div class="system__pc">
+						<img src="img/devices_pc.png" />
+						<div class="system__phone">
+							<img src="img/devices_phone.png" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="documents">
+				<div class="container">
+					<h2>Документы</h2>
+
+					<div class="documents__flex">
+						<a href="#" class="documents__document">
+							<div class="documents__icon">
+								<img src="img/document.svg" />
+							</div>
+							<div class="documents__name">Договор на оказание услуг</div>
+						</a>
+						<a href="#" class="documents__document">
+							<div class="documents__icon">
+								<img src="img/document.svg" />
+							</div>
+							<div class="documents__name">Условия оказания доп. услуг по подписке</div>
+						</a>
+						<a href="#" class="documents__document">
+							<div class="documents__icon">
+								<img src="img/document.svg" />
+							</div>
+							<div class="documents__name">Условия программы «Все включено»</div>
+						</a>
+						<a href="#" class="documents__document">
+							<div class="documents__icon">
+								<img src="img/document.svg" />
+							</div>
+							<div class="documents__name">Соглашение о правилах пользования сервисом</div>
+						</a>
+						<a href="#" class="documents__document">
+							<div class="documents__icon">
+								<img src="img/document.svg" />
+							</div>
+							<div class="documents__name">Решение о аккредитации</div>
+						</a>
+					</div>
+
+					<div class="arrows">
+						<button class="arrows__arrow_left documents__arrow_left">
+							<img src="img/black_left_arrow.svg" alt="" />
+						</button>
+						<button class="arrows__arrow_right documents__arrow_right">
+							<img src="img/black_left_arrow.svg" alt="" />
+						</button>
+						<div class="arrows__info">Изучите наши условия <br> и предложения</div>
+					</div>
+
+					<div class="documents__slider">
+						<swiper-container navigation="true" navigation-next-el=".documents__arrow_right"
+							navigation-prev-el=".documents__arrow_left" allow-touch-move="false" space-between="10px"
+							slides-per-view="1.1">
+							<swiper-slide>
+								<a href="#">
+									<div class="documents__icon">
+										<img src="img/document.svg" />
+									</div>
+									<div class="documents__name">Договор на оказание услуг</div>
+								</a>
+							</swiper-slide>
+							<swiper-slide>
+								<a href="#">
+									<div class="documents__icon">
+										<img src="img/document.svg" />
+									</div>
+									<div class="documents__name">Условия оказания доп. услуг по подписке</div>
+								</a>
+							</swiper-slide>
+							<swiper-slide>
+								<a href="#">
+									<div class="documents__icon">
+										<img src="img/document.svg" />
+									</div>
+									<div class="documents__name">Условия программы «Все включено»</div>
+								</a>
+							</swiper-slide>
+							<swiper-slide>
+								<a href="#">
+									<div class="documents__icon">
+										<img src="img/document.svg" />
+									</div>
+									<div class="documents__name">Соглашение о правилах пользования сервисом</div>
+								</a>
+							</swiper-slide>
+							<swiper-slide>
+								<a href="#">
+									<div class="documents__icon">
+										<img src="img/document.svg" />
+									</div>
+									<div class="documents__name">Решение о аккредитации</div>
+								</a>
+							</swiper-slide>
+						</swiper-container>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="questions">
+				<div class="container">
+					<div class="questions__body">
+						<div class="questions__title">
+							<h2>Частые вопросы</h2>
+							<button class="questions__send-question" id="send-question-trigger">Нет ответа на ваш вопрос?</button>
+						</div>
+						<ul class="questions__items">
+							<li class="questions__item">
+								<div class="questions__question">
+									Для чего нужен ваш сервис?
+									<img src="img/black_arrow_down.svg" />
+								</div>
+								<div class="questions__answer">
+									<p>
+										Наш цифровой ассистент предоставляет инструменты для эффективного управления финансами, ресурсами и
+										процессами на строительной площадке
+									</p>
+								</div>
+							</li>
+							<li class="questions__item">
+								<div class="questions__question">
+									Есть ли какие-то функции, которую нужно оплачивать отдельно?
+									<img src="img/black_arrow_down.svg" />
+								</div>
+								<div class="questions__answer">
+									<p>
+										Наш цифровой ассистент предоставляет инструменты для эффективного управления финансами, ресурсами и
+										процессами на строительной площадке
+									</p>
+								</div>
+							</li>
+							<li class="questions__item">
+								<div class="questions__question">
+									Какая стоимость сервиса?
+									<img src="img/black_arrow_down.svg" />
+								</div>
+								<div class="questions__answer">
+									<p>
+										Наш цифровой ассистент предоставляет инструменты для эффективного управления финансами, ресурсами и
+										процессами на строительной площадке
+									</p>
+									<p>
+										Наш цифровой ассистент предоставляет инструменты для эффективного управления финансами, ресурсами и
+										процессами на строительной площадке
+									</p>
+									<p>
+										Наш цифровой ассистент предоставляет инструменты для эффективного управления финансами, ресурсами и
+										процессами на строительной площадке
+									</p>
+								</div>
+							</li>
+							<li class="questions__item">
+								<div class="questions__question">
+									Какие есть ограничение на кол-во объектов, материалов и оборудования?
+									<img src="img/black_arrow_down.svg" />
+								</div>
+								<div class="questions__answer">
+									<p>
+										Наш цифровой ассистент предоставляет инструменты для эффективного управления финансами, ресурсами и
+										процессами на строительной площадке
+									</p>
+								</div>
+							</li>
+							<li class="questions__item">
+								<div class="questions__question">
+									Есть ли мобильная версия сервиса?
+									<img src="img/black_arrow_down.svg" />
+								</div>
+								<div class="questions__answer">
+									<p>
+										Наш цифровой ассистент предоставляет инструменты для эффективного управления финансами, ресурсами и
+										процессами на строительной площадке
+									</p>
+								</div>
+							</li>
+							<li class="questions__item">
+								<div class="questions__question">
+									Есть ли мобильная версия сервиса?
+									<img src="img/black_arrow_down.svg" />
+								</div>
+								<div class="questions__answer">
+									<p>
+										Наш цифровой ассистент предоставляет инструменты для эффективного управления финансами, ресурсами и
+										процессами на строительной площадке
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__body">
+					<div class="footer__up">
+						<div class="footer__logo-container">
+							<a href="#" class="footer__logo">
+								<img src="img/header_logo.svg" />
+							</a>
+						</div>
+						<a href="#" class="footer__tel">
+							<span>+7 (499) 444-32-88</span>
+							<img src="img/white-phone.svg" />
+						</a>
+						<a href="#" class="footer__mail">
+							<span>info@dcut.tech</span>
+							<img src="img/white-mail.svg" />
+						</a>
+					</div>
+					<div class="footer__down">
+						<span>ООО «ДИКАТ ТЕХНОЛОДЖИС»</span>
+						<span>ИНН 9715434732</span>
+						<span>127018, г. Москва, Складочная ул, д. 1 стр. 1, помещ. Iа ком. 13</span>
+						<a href="#" class="footer__privacy-policy">Политика конфиденциальности</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="modal" id="send-question-modal">
+			<div class="modal__body">
+				<div class="modal__content">
+					<button class="modal__close">
+						<img src="img/black_close.svg" />
+					</button>
+					<div class="modal__icon">
+						<img src="img/white_modal_question.svg" />
+					</div>
+					<div class="modal__title">Задать свой вопрос</div>
+					<div class="modal__text">
+						Не нашли ответов на свой вопрос на сайте? Заполните форму ниже и мы свяжемся с вами в ближайшее время
+					</div>
+
+					<div class="modal__form">
+						<form action="">
+							<input required type="text" class="modal__input modal__name" placeholder="Ваше имя" />
+							<input required type="email" class="modal__input modal__email" placeholder="Электронная почта" />
+							<input required type="tel" class="modal__input modal__tel" placeholder="Номер телефона" />
+							<button type="submit" class="modal__submit" id="send-application-submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" id="send-application-modal">
+			<div class="modal__body">
+				<div class="modal__content">
+					<button class="modal__close">
+						<img src="img/black_close.svg" />
+					</button>
+					<div class="modal__icon">
+						<img src="img/white_modal_plus.svg" />
+					</div>
+					<div class="modal__title">Оставить заявку</div>
+					<div class="modal__text">
+						Заполните форму ниже и мы свяжемся с вами в ближайшее время
+					</div>
+
+					<div class="modal__form">
+						<form action="">
+							<input required type="text" class="modal__input modal__name" placeholder="Ваше имя" />
+							<input required type="email" class="modal__input modal__email" placeholder="Электронная почта" />
+							<input required type="tel" class="modal__input modal__tel" placeholder="Номер телефона" />
+							<button type="submit" class="modal__submit" id="send-application-submit">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal" id="send-application-success-modal">
+			<div class="modal__body">
+				<div class="modal__content">
+					<button class="modal__close">
+						<img src="img/black_close.svg" />
+					</button>
+					<div class="modal__icon">
+						<img src="img/white_modal_plus.svg" />
+					</div>
+					<div class="modal__title">Заявка отправлена</div>
+					<div class="modal__text">
+						Мы свяжемся с вами в ближайшее время, чтобы уточнить детали. Хорошего дня!
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/modal.js"></script>
+	<script src="js/questions.js"></script>
+</body>
+
+</html>

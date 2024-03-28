@@ -1,0 +1,58 @@
+.info {
+	padding: 150px 0;
+	background: url("../img/info_section_main.png") 50%/cover no-repeat;
+	color: #FFFFFF;
+
+	&__text {
+		max-width: 740px;
+		margin: 0 auto;
+
+		display: flex;
+		gap: 20px;
+		flex-direction: column;
+	}
+
+	&__slider {
+		display: none;
+	}
+
+	.arrows {
+		margin-top: 40px;
+		display: none;
+
+		&__arrow_left,
+		&__arrow_right {
+			border: 1px solid #FFFFFF;
+		}
+
+		swiper-container {
+			min-width: 0;
+			margin-left: 10px;
+		}
+	}
+
+	@include lg-d {
+		padding: 120px 0;
+	}
+
+	@include md-d {
+		padding: 100px 0;
+	}
+
+	@include sm-d {
+		padding: 70px 0;
+		background: url("../img/info_section_main.png") 40% 50%/cover no-repeat;
+
+		&__text {
+			display: none;
+		}
+
+		&__slider {
+			display: block;
+		}
+
+		.arrows {
+			display: flex;
+		}
+	}
+}

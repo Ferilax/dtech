@@ -1,0 +1,49 @@
+.team {
+	padding: 50px 0 150px;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__row {
+		display: flex;
+		gap: 50px;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		gap: 10px;
+	}
+
+	&__right {
+		flex: 0 0 58%;
+	}
+
+	&__image {
+		aspect-ratio: 643/393;
+	}
+
+	@include lg-d {
+		padding: 40px 0 120px;
+	}
+
+	@include md-d {
+		padding: 30px 0 100px;
+		&__row {
+			gap: 20px;
+		}
+	}
+
+	@include sm-d {
+		padding: 100px 0;
+
+		&__row {
+			flex-direction: column;
+			gap: 50px;
+		}
+	}
+}
