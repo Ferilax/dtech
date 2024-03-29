@@ -28,7 +28,3 @@ close.addEventListener("click", (e) => {
 	header.classList.remove("menu-open");
 	body.classList.remove("lock");
 })
-
-body.addEventListener("touchmove", function (e) {
-	e.preventDefault();
-})
