@@ -52,6 +52,10 @@
 		justify-content: space-between;
 		gap: 20px;
 		position: relative;
+
+		@include lg-d {
+			gap: 15px;
+		}
 	}
 
 	&__menu-login {
@@ -75,6 +79,10 @@
 		align-items: center;
 		gap: 20px;
 		height: 100%;
+
+		@include lg-d {
+			gap: 15px;
+		}
 	}
 
 	&__login {
@@ -89,6 +97,10 @@
 		border: 1px solid #FFFFFF;
 		background: transparent;
 		border-radius: 50px;
+
+		@include lg-d {
+			flex: 0 0 100px;
+		}
 	}
 
 	&__link {
@@ -96,6 +108,8 @@
 	}
 
 	&__link {
+		background: transparent;
+		
 		&::before {
 			content: "";
 			position: absolute;

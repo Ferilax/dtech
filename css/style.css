@@ -130,6 +130,11 @@ h1, h2, h3, h4, h5, h6 {
   gap: 20px;
   position: relative;
 }
+@media (max-width: 1279.8px) {
+  .header__content {
+    gap: 15px;
+  }
+}
 .header__menu-login {
   background: transparent;
   width: 100%;
@@ -149,6 +154,11 @@ h1, h2, h3, h4, h5, h6 {
   gap: 20px;
   height: 100%;
 }
+@media (max-width: 1279.8px) {
+  .header__nav-body {
+    gap: 15px;
+  }
+}
 .header__login {
   display: flex;
   align-items: center;
@@ -160,8 +170,16 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   border-radius: 50px;
 }
+@media (max-width: 1279.8px) {
+  .header__login {
+    flex: 0 0 100px;
+  }
+}
 .header__link {
   position: relative;
+}
+.header__link {
+  background: transparent;
 }
 .header__link::before {
   content: "";
