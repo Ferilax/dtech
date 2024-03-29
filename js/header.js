@@ -22,11 +22,9 @@ document.addEventListener("scroll", (e) => {
 burger.addEventListener("click", (e) => {
 	header.classList.toggle("menu-open");
 	body.classList.toggle("lock");
-	html.classList.toggle("lock");
 })
 
 close.addEventListener("click", (e) => {
 	header.classList.remove("menu-open");
 	body.classList.remove("lock");
-	html.classList.remove("lock");
 })
