@@ -14,7 +14,7 @@ if (window.scrollY > 66) {
 document.addEventListener("scroll", (e) => {
 	if (window.scrollY > 66) {
 		header.classList.add("fixed");
-	} else if(window.scrollY === 0) {
+	} else if (window.scrollY === 0) {
 		header.classList.remove("fixed");
 	}
 });
@@ -27,4 +27,8 @@ burger.addEventListener("click", (e) => {
 close.addEventListener("click", (e) => {
 	header.classList.remove("menu-open");
 	body.classList.remove("lock");
+})
+
+body.addEventListener("touchmove", function (e) {
+	e.preventDefault();
 })
