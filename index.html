@@ -49,7 +49,7 @@
 						</svg>
 					</a>
 					<nav class="header__nav">
-						<div class="header__nav-container">
+						<div class="header__nav-body">
 							<a href="#" class="header__link active">О проекте</a>
 							<a href="#" class="header__link">Для кого</a>
 							<a href="#" class="header__link">Внедрение</a>
@@ -96,14 +96,14 @@
 						</p>
 						<button id="send-application-trigger" class="cover__send">Оставить заявку</button>
 					</div>
-					<a href="#optimization" class="cover__info">
+					<button class="cover__info">
 						<span>Узнайте о проекте</span>
 						<img src="img/white_arrow_down.svg" alt="">
-					</a>
+					</button>
 				</div>
 			</section>
 
-			<section class="optimization" id="optimization">
+			<section class="optimization">
 				<div class="container">
 					<div class="optimization__body">
 						<div class="optimization__left">
@@ -540,10 +540,8 @@
 			<section class="questions">
 				<div class="container">
 					<div class="questions__body">
-						<div class="questions__title">
-							<h2>Частые вопросы</h2>
-							<button class="questions__send-question" id="send-question-trigger">Нет ответа на ваш вопрос?</button>
-						</div>
+						<h2 class="questions__title">Частые вопросы</h2>
+						<button class="questions__send-question" id="send-question-trigger">Нет ответа на ваш вопрос?</button>
 						<ul class="questions__items">
 							<li class="questions__item">
 								<div class="questions__question">
@@ -733,6 +731,7 @@
 	<script src="js/header.js"></script>
 	<script src="js/modal.js"></script>
 	<script src="js/questions.js"></script>
+	<script src="js/scroll.js"></script>
 </body>
 
 </html>

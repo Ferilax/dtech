@@ -39,15 +39,11 @@
 		left: 50%;
 		transform: translate(-50%, 0);
 		bottom: 40px;
+		background: transparent;
 
 		img {
 			margin-top: 14px;
 			animation: 0.9s ease-in-out arrow infinite alternate;
-		}
-
-		@include md-d {
-			pointer-events: none;
-			cursor: default;
 		}
 	}
 

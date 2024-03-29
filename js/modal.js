@@ -7,6 +7,8 @@ const sendApllicationTrigger = document.getElementById("send-application-trigger
 const sendQuestionModal = document.getElementById("send-question-modal");
 const sendQuestionTrigger = document.getElementById("send-question-trigger");
 
+const tariffButtons = document.querySelectorAll(".tariff__button");
+
 function preventTab(e) {
 	if (e.key == "Tab") {
 		e.preventDefault();
@@ -94,9 +96,12 @@ setModal(sendApllicationSuccessModal);
 setModal(sendApllicationModal, sendApllicationTrigger);
 setModal(sendQuestionModal, sendQuestionTrigger);
 
+tariffButtons.forEach(button => {
+	setModal(sendApllicationModal, button);
+})
+
 setValidateOnModal(sendQuestionModal)
-// Ручная установка логики, так как это окно в два этапа
-setValidateOnModal(sendApllicationModal, function () {
+setValidateOnModal(sendApllicationModal, function () { // Ручная установка логики, так как это окно в два этапа
 	sendApllicationSuccessModal.classList.add("open");
 	body.classList.add("lock");
 	document.addEventListener("keydown", preventTab);
