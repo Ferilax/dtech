@@ -1306,3 +1306,7 @@ h2, .modal__title {
     font-size: 24px;
   }
 }
+
+.wrapper {
+  overflow: hidden;
+}
