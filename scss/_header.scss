@@ -171,6 +171,10 @@
 		&__nav-body {
 			overflow-y: auto;
 			align-items: flex-start;
+			button {
+				text-align: left;
+				font-weight: inherit;
+			}
 			flex-direction: column;
 			gap: 0;
 
@@ -186,6 +190,10 @@
 
 			&:not(:last-child) {
 				border-bottom: 1px solid var(--black)25;
+			}
+
+			&::before {
+				display: none;
 			}
 		}
 

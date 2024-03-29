@@ -234,6 +234,10 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 0;
   }
+  .header__nav-body button {
+    text-align: left;
+    font-weight: inherit;
+  }
   .header__nav-body::before {
     content: "";
     flex: 1 1 auto;
@@ -244,6 +248,9 @@ h1, h2, h3, h4, h5, h6 {
   }
   .header__link:not(:last-child) {
     border-bottom: 1px solid var(--black) 25;
+  }
+  .header__link::before {
+    display: none;
   }
   .header__close {
     display: flex;
@@ -828,7 +835,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.team__row {
+.team__body {
   display: flex;
   gap: 50px;
 }
@@ -853,7 +860,7 @@ h1, h2, h3, h4, h5, h6 {
   .team {
     padding: 30px 0 100px;
   }
-  .team__row {
+  .team__body {
     gap: 20px;
   }
 }
@@ -861,7 +868,7 @@ h1, h2, h3, h4, h5, h6 {
   .team {
     padding: 100px 0;
   }
-  .team__row {
+  .team__body {
     flex-direction: column;
     gap: 50px;
   }
@@ -1269,7 +1276,7 @@ body {
   line-height: 1.4;
 }
 
-section {
+section .container > div {
   scroll-margin-top: 66px;
 }
 
