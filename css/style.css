@@ -1274,6 +1274,7 @@ body {
   color: var(--black);
   overflow-x: hidden;
   line-height: 1.4;
+  overflow: hidden;
 }
 
 section .container > div {
