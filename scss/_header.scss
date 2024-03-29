@@ -96,8 +96,7 @@
 		position: relative;
 	}
 
-	&__link.active {
-
+	&__link {
 		&::before {
 			content: "";
 			position: absolute;
@@ -106,6 +105,14 @@
 			background: #FFFFFF;
 			bottom: -5px;
 			left: 0;
+			transition: 0.2s;
+			transform: scale(0, 1);
+		}
+
+		&:hover {
+			&::before {
+				transform: scale(1);
+			}
 		}
 	}
 
@@ -211,9 +218,11 @@
 			fill: var(--blue);
 		}
 
-		.header__link.active {
-			&::before {
-				background: var(--black);
+		.header__link {
+			&:hover {
+				&::before {
+					background: var(--black);
+				}
 			}
 		}
 	}
@@ -313,7 +322,9 @@
 		z-index: -9999;
 	}
 
-	.header__link.active {
-		color: var(--blue);
+	.header__link {
+		&:hover, &:active {
+			color: var(--blue);
+		}
 	}
 }

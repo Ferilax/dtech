@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__link {
   position: relative;
 }
-.header__link.active::before {
+.header__link::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -171,6 +171,11 @@ h1, h2, h3, h4, h5, h6 {
   background: #FFFFFF;
   bottom: -5px;
   left: 0;
+  transition: 0.2s;
+  transform: scale(0, 1);
+}
+.header__link:hover::before {
+  transform: scale(1);
 }
 @media (max-width: 1023.8px) {
   .header {
@@ -257,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
   .header.fixed .header__logoIcon {
     fill: var(--blue);
   }
-  .header.fixed .header__link.active::before {
+  .header.fixed .header__link:hover::before {
     background: var(--black);
   }
 }
@@ -337,7 +342,7 @@ h1, h2, h3, h4, h5, h6 {
 .header.menu-open .header__login {
   z-index: -9999;
 }
-.header.menu-open .header__link.active {
+.header.menu-open .header__link:hover, .header.menu-open .header__link:active {
   color: var(--blue);
 }
 
@@ -1205,7 +1210,6 @@ h1, h2, h3, h4, h5, h6 {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 body {
