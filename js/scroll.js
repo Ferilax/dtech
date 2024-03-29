@@ -25,7 +25,7 @@ const footerSection = document.querySelector(".footer");
 const nav = document.querySelector(".header__nav");
 
 function smoothScroll(trigger, element) {
-	trigger.addEventListener("click", function (e) {
+	trigger.addEventListener("click", function () {
 		element.scrollIntoView();
 	});
 };

@@ -11,7 +11,7 @@ if (window.scrollY > 66) {
 	header.classList.remove("fixed");
 }
 
-document.addEventListener("scroll", (e) => {
+document.addEventListener("scroll", () => {
 	if (window.scrollY > 66) {
 		header.classList.add("fixed");
 	} else if (window.scrollY === 0) {
@@ -19,12 +19,12 @@ document.addEventListener("scroll", (e) => {
 	}
 });
 
-burger.addEventListener("click", (e) => {
+burger.addEventListener("click", () => {
 	header.classList.toggle("menu-open");
 	body.classList.toggle("lock");
 })
 
-close.addEventListener("click", (e) => {
+close.addEventListener("click", () => {
 	header.classList.remove("menu-open");
 	body.classList.remove("lock");
 })
