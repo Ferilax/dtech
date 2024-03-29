@@ -30,7 +30,6 @@ body {
 	color: var(--black);
 	overflow-x: hidden;
 	line-height: 1.4;
-	overflow: hidden;
 }
 
 section {
@@ -42,6 +41,11 @@ section {
 }
 
 body.lock {
+	overflow: hidden;
+}
+
+.wrapper {
+	position: relative;
 	overflow: hidden;
 }
 
@@ -63,8 +67,4 @@ h2, .modal__title {
 	@include sm-d {
 		font-size: 24px;
 	}
-}
-
-.wrapper {
-	overflow: hidden;
 }
