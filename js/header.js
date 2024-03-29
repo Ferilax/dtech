@@ -3,7 +3,7 @@ const burger = document.querySelector(".burger");
 const body = document.querySelector("body");
 const html = document.querySelector("html");
 const close = document.querySelector(".header__close");
-
+const nav = document.querySelector(".header__nav");
 
 if (window.scrollY > 66) {
 	header.classList.add("fixed");
@@ -28,3 +28,11 @@ close.addEventListener("click", () => {
 	header.classList.remove("menu-open");
 	body.classList.remove("lock");
 })
+
+nav.addEventListener("click", function (e) {
+	let clickedLink = e.target.closest(".header__link");
+	if (clickedLink) {
+		header.classList.remove("menu-open");
+		body.classList.remove("lock");
+	}
+});

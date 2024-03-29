@@ -22,8 +22,6 @@ const questionsSection = document.querySelector(".questions__body");
 const footerTrigger = document.getElementById("scroll_to_footer");
 const footerSection = document.querySelector(".footer");
 
-const nav = document.querySelector(".header__nav");
-
 function smoothScroll(trigger, element) {
 	trigger.addEventListener("click", function () {
 		element.scrollIntoView();
@@ -39,11 +37,3 @@ smoothScroll(teamTrigger, teamSection);
 smoothScroll(documentsTrigger, documentsSection);
 smoothScroll(questionsTrigger, questionsSection);
 smoothScroll(footerTrigger, footerSection);
-
-nav.addEventListener("click", function (e) {
-	let clickedLink = e.target.closest(".header__link");
-	if (clickedLink) {
-		header.classList.remove("menu-open");
-		body.classList.remove("lock");
-	}
-});
