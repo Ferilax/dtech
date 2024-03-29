@@ -1269,6 +1269,10 @@ body {
   line-height: 1.4;
 }
 
+section {
+  scroll-margin-top: 66px;
+}
+
 body.lock {
   overflow: hidden;
 }

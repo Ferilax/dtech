@@ -1,12 +1,39 @@
-const coverInfo = document.querySelector(".cover__info");
+const optimizationTrigger = document.querySelector(".cover__info");
 const optimizationSection = document.querySelector(".optimization");
 
+const coverTrigger = document.getElementById("scroll_to_cover");
+const coverSection = document.querySelector(".cover");
+
+const serviceTrigger = document.getElementById("scroll_to_service");
+const serviceSection = document.querySelector(".service");
+
+const tariffTrigger = document.getElementById("scroll_to_tariff");
+const tariffSection = document.querySelector(".tariff");
+
+const infoTrigger = document.getElementById("scroll_to_info");
+const infoSection = document.querySelector(".info");
+
+const documentsTrigger = document.getElementById("scroll_to_documents");
+const documentsSection = document.querySelector(".documents");
+
+const questionsTrigger = document.getElementById("scroll_to_questions");
+const questionsSection = document.querySelector(".questions");
+
+const footerTrigger = document.getElementById("scroll_to_footer");
+const footerSection = document.querySelector(".footer");
 
 function smoothScroll(trigger, element) {
 	trigger.addEventListener("click", function (e) {
 		element.scrollIntoView();
 	});
-}
+};
 
 
-smoothScroll(coverInfo, optimizationSection)
+smoothScroll(optimizationTrigger, optimizationSection);
+smoothScroll(coverTrigger, coverSection);
+smoothScroll(serviceTrigger, serviceSection);
+smoothScroll(tariffTrigger, tariffSection);
+smoothScroll(infoTrigger, infoSection);
+smoothScroll(documentsTrigger, documentsSection);
+smoothScroll(questionsTrigger, questionsSection);
+smoothScroll(footerTrigger, footerSection);
