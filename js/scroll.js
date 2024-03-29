@@ -10,8 +10,8 @@ const serviceSection = document.querySelector(".service");
 const tariffTrigger = document.getElementById("scroll_to_tariff");
 const tariffSection = document.querySelector(".tariff");
 
-const infoTrigger = document.getElementById("scroll_to_info");
-const infoSection = document.querySelector(".info");
+const teamTrigger = document.getElementById("scroll_to_team");
+const teamSection = document.querySelector(".team");
 
 const documentsTrigger = document.getElementById("scroll_to_documents");
 const documentsSection = document.querySelector(".documents");
@@ -33,7 +33,7 @@ smoothScroll(optimizationTrigger, optimizationSection);
 smoothScroll(coverTrigger, coverSection);
 smoothScroll(serviceTrigger, serviceSection);
 smoothScroll(tariffTrigger, tariffSection);
-smoothScroll(infoTrigger, infoSection);
+smoothScroll(teamTrigger, teamSection);
 smoothScroll(documentsTrigger, documentsSection);
 smoothScroll(questionsTrigger, questionsSection);
 smoothScroll(footerTrigger, footerSection);
