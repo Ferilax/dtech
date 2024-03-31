@@ -392,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .cover {
   min-height: 100vh;
-  transition: 0.2s;
+  min-height: 100svh;
   background: url(../img/main_image.jpg) 50%/cover no-repeat;
   display: flex;
   flex-direction: column;
