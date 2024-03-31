@@ -9,8 +9,8 @@
 }
 
 .cover {
-	height: 100vh;
-	height: -webkit-fill-available;;
+	min-height: 100vh;
+	//min-height: -webkit-fill-available;
 	transition: 0.2s;
 	background: url(../img/main_image.jpg) 50%/cover no-repeat;
 	display: flex;
